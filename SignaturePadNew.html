@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Signature Pad with Popup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="openSignaturePopup">Sign Document</button>
+        <button id="closeSignaturePopup">Close Document</button>
+        <div id="pdfViewer"></div>
+    </div>
+
+    <div id="signaturePopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Signature Pad</h2>
+            <canvas id="signatureCanvas"></canvas>
+            <div>
+                <button id="clearSignature">Clear Signature</button>
+                <button id="applySignature">Apply Signature</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
